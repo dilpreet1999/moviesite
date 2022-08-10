@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function MovieBox({ data }) {
   return (
@@ -8,12 +9,16 @@ export default function MovieBox({ data }) {
         <div className="movie-image">
           <Image
             src={`https://image.tmdb.org/t/p/w500/${data.poster_path}`}
+            className="movie-image"
             width={300}
             height={300}
           />
         </div>
         <div className='movie-detail'>
-        <h5>{data.title}</h5>
+        <h5>
+          <Link href={`/${data.id}`}>
+         <a> {data.title}</a></Link>
+         </h5>
         <span>{data.vote_average}</span>
 
         </div>
