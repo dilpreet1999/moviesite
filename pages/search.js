@@ -39,7 +39,7 @@ export default function Search() {
   return (
     <div className=''>
         {
-            movie.length>0 ?     (<Movie movie={movie} />)
+            movie ?     (<Movie movie={movie} />)
 : 'No movie found'
         }
     </div>

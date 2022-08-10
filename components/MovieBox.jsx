@@ -12,6 +12,7 @@ export default function MovieBox({ data }) {
             className="movie-image"
             width={300}
             height={300}
+            alt={data.title}
           />
         </div>
         <div className='movie-detail'>
