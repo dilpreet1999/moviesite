@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
+import { useRouter } from 'next/router'
+
 
 export default function MovieDetail() {
+
   return (
-    <div>MovieDetail</div>
+    <>
+    <h1>Movie Detail</h1>
+    </>
   )
 }

@@ -1,12 +1,13 @@
-import Layout from '../components/Layout'
-import '../styles/globals.css'
+import Layout from "../components/Layout";
+import "../styles/globals.css";
+import "../styles/movieDetail.css";
 
 function MyApp({ Component, pageProps }) {
   return (
     <Layout>
-      <Component {...pageProps} />
+      <Component {...pageProps} />{" "}
     </Layout>
-  )
+  );
 }
 
-export default MyApp
+export default MyApp;
