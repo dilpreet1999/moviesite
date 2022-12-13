@@ -1,6 +1,6 @@
 import Layout from "../components/Layout";
 import "../styles/globals.css";
-import "../styles/movieDetail.css";
+import "../styles/moviedetail.css";
 
 function MyApp({ Component, pageProps }) {
   return (

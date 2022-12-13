@@ -64,10 +64,10 @@ export default function MovieSingle({ movie }) {
             <div className="movie__links">
                 <div className="movie__heading">Useful Links</div>
                 {
-                    movie && movie.homepage && <a href={movie.homepage} target="_blank" rel='noreferers' style={{textDecoration: "none",paddingLeft:"10px"}}><p><span className="movie__homeButton movie__Button">Website <i className="newTab fas fa-external-link-alt"></i></span></p></a>
+                    movie && movie.homepage && <a href={movie.homepage} target="_blank" rel='noreferrer' style={{textDecoration: "none",paddingLeft:"10px"}}><p><span className="movie__homeButton movie__Button">Website <i className="newTab fas fa-external-link-alt"></i></span></p></a>
                 }
                 {
-                    movie && movie.imdb_id && <a href={"https://www.imdb.com/title/" + movie.imdb_id} target="_blank" style={{textDecoration: "none"}}><p><span className="movie__imdbButton movie__Button">IMDb<i className="newTab fas fa-external-link-alt"></i></span></p></a>
+                    movie && movie.imdb_id && <a href={"https://www.imdb.com/title/" + movie.imdb_id} target="_blank" rel="noreferrer" style={{textDecoration: "none"}}><p><span className="movie__imdbButton movie__Button">IMDb<i className="newTab fas fa-external-link-alt"></i></span></p></a>
                 }
             </div>
             <div className="movie__heading">Production companies</div>
