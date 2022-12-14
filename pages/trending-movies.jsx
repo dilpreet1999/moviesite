@@ -16,8 +16,13 @@ export default function Trending() {
         });
     }
   return (
+  <>
     <div className=''>
     <Movie movie={movie} />
+            {/* Bidvertiser2077281 */}
     </div>
+
+    </>
+
   )
 }
