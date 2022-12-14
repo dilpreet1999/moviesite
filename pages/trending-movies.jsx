@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react';
 import Movie from '../components/Movie'
-
+import Script from 'next/script'
 
 export default function Trending() {
     const Trending_url = "https://api.themoviedb.org/3/trending/movie/day?api_key=dae81bdae797ded183ee269afd03a3c4";
@@ -19,7 +19,7 @@ export default function Trending() {
   <>
     <div className=''>
     <Movie movie={movie} />
-            {/* Bidvertiser2077281 */}
+
     </div>
 
     </>
